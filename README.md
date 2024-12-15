@@ -1,59 +1,48 @@
 # Angular0
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.5.
+ng new angular0
 
-## Development server
+serve -> "options": {"forceEsbuild":true},
 
-To start a local development server, run:
+ng serve --o
 
-```bash
-ng serve
-```
+npm run ng <command>
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+ng add @angular/material@latest
+ng add @angular-eslint/schematics
 
-## Code scaffolding
+ng completion[options]
+https://angular.dev/cli/completion
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Estructura:
+https://angular.dev/style-guide
 
-```bash
-ng generate component component-name
-```
+ng g c pages/not-found
+ng g c pages/expositorLibros
+ng g c pages/creacionLibros
+ng g c pages/login
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+ng add @angular/material
+ng g m shared/material
 
-```bash
-ng generate --help
-```
+ng g g core/guards/auth
+ng g g core/guards/authed
 
-## Building
+ng g s core/services/libro
 
-To build the project run:
+.container {
+display: grid;
+place-items: center;
+height: 100vh;
+}
 
-```bash
+npm run ng g c pages/edicionLibro
+npm run ng g p shared/pipes/addPuntos
+npm run ng g d shared/directives/decoraEtiquetas
+
+ng g d shared/directives/conversionInput
+ng g c shared/tablaGenerica
+
+ng g m pages/usuario --routing
+
 ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
