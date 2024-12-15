@@ -1,5 +1,7 @@
 # Angular0
 
+03 - 20:53
+
 ng new angular0
 
 serve -> "options": {"forceEsbuild":true},
@@ -7,6 +9,11 @@ serve -> "options": {"forceEsbuild":true},
 ng serve --o
 
 npm run ng <command>
+
+ngDoCheck
+ngAfterContentChecked
+ngAfterViewChecked
+ngOnChanges
 
 ng add @angular/material@latest
 ng add @angular-eslint/schematics
