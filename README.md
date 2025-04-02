@@ -1,7 +1,5 @@
 # Angular0
 
-04 - 26:42
-
 ng new angular0
 
 serve -> "options": {"forceEsbuild":true},
